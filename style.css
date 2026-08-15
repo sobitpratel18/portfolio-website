@@ -11,20 +11,16 @@ background-color: #f4f4f4;
 color: #333;
 line-height: 1.6;
 }
-/*Header*/
-header{
-    background-color: #1e3a8a;
-    color: white;
-    text-align: center;
-    padding: 41px;
-}
 /*Navigation*/
 nav{
     background-color: #111827;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20 px 80px;
+    padding: 20px 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .logo{
     color: white;
@@ -34,9 +30,7 @@ nav{
 .nav-links{
     display: flex;
     list-style: none;
-}
-.nav-links li{
-    margin-left: 30px;
+    gap: 30px;
 }
 .nav-links a{
 text-decoration: none;
@@ -47,7 +41,13 @@ transition: 0.3s;
 .nav-links a:hover{
 color: #38bdf8;
 }
-
+/*Header*/
+header{
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 41px;
+}
 /*Sections*/
 section{
     width: 80%;
@@ -65,43 +65,58 @@ footer{
 }
 /*Hero Section*/
 .hero{
-text-align: center;
-padding: 100px 20px;
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+.hero-content{
+    max-width: 850px;
+    margin: 0 auto;
+}
+.hero-intro{
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 .hero h1{
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 64px;
+    margin-bottom: 10px;
 }
 .hero span{
     color: #38bdf8;
 }
 .hero h2{
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 20px;
 }
-.hero p{
-max-width: 700px;
-margin: 20px auto;
-font-size: 20px;
+.hero-description{
+    max-width: 700px;
+    margin: 0 auto 25px;
+    font-size: 19px;
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 .btn{
     display: inline-block;
-    margin-top: 25px;
-   background: #38bdf8;
-   color: white;
-   text-decoration: none;
-   padding: 15px 35px;
-   border-radius: 8px;
-   transition: 0.3s;
+    background: #38bdf8;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 8px;
+    transition: 0.3px;
 }
 .btn:hover{
-    background: #0284c7;
+    color: #1e3a8a;
 }
 /*About Section*/
 .about{
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 70px;
 }
 .about-image{
     flex: 1;
@@ -116,49 +131,35 @@ border-radius: 50%;
 .about-content{
     flex: 1;
 }
+.section-label{
+    color: #0284c7;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
 .about-content h2{
     font-size: 36px;
+    line-height: 1.2;
     margin-bottom: 20px;
 }
 .about-content p{
     margin-bottom: 15px;
 }
-/*Responsive Design*/
-@media (max-width="768px") {
-    nav{
-        padding: 20px;
-    }
-    .nav-links li{
-margin-left: 15px;
-    }
-    .hero h1{
-font-size: 36px;
-    }
-    .hero h2{
-        font-size: 22px;
-    }
-    .about{
-        flex-direction: column;
-        text-align: center;
-    }
-    .about-image img{
-        width: 220px;
-        height: 220px;
-    }
-    section{
-        width: 90%;
-    }
-    .skills-container{
-    grid-template-columns:1fr;
-    }
-}
 /*Skills Section*/
 .skills{
     text-align: center;
 }
+.skills .section-label{
+    margin-bottom: 8px;
+}
 .skills h2{
     font-size: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+.skill-intro{
+    max-width: 650px;
+    margin: 0 auto 30px;
 }
 .skills-container{
     display: grid;
@@ -181,13 +182,17 @@ font-size: 36px;
 .projects{
     text-align: center;
 }
+.projects-intro{
+max-width: 650px;
+margin: 0 auto 50px;
+}
 .projects h2{
     font-size: 36px;
     margin-bottom: 30px;
 }
 .projects-container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,minmax(0,1fr));
     gap: 25px;
 }
 .project-card{
@@ -195,6 +200,7 @@ font-size: 36px;
     padding: 30px;
     border-radius: 10px;
     transition: 0.3s;
+    min-width: 0;
 }
 .project-card:hover{
     transform: translateY(-8px);
@@ -213,6 +219,7 @@ font-size: 36px;
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .secondary{
     background: #111827;
@@ -221,9 +228,16 @@ font-size: 36px;
 .contact{
     text-align: center;
 }
+.contact .section-label{
+    margin-bottom: 8px;
+}
+.contact-into{
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
 .contact h2{
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .contact p{
     max-width: 600px;
@@ -233,4 +247,68 @@ font-size: 36px;
     display: flex;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap;
+}
+/*Responsive Design*/
+@media (max-width: 768px) {
+    nav {
+        padding: 20px;
+    }
+    .logo {
+        font-size: 22px;
+    }
+    .nav-links {
+        gap: 12px;
+    }
+    .nav-links li {
+        margin-left: 0;
+    }
+    .nav-links a {
+        font-size: 14px;
+    }
+    .hero {
+        padding: 80px 20px;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero h2 {
+        font-size: 22px;
+    }
+    .hero p {
+        font-size: 17px;
+    }
+    section {
+        width: 90%;
+        padding: 25px;
+    }
+    .about {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .about-image img {
+        width: 220px;
+        height: 220px;
+    }
+    .about-content {
+        align-items: center;
+    }
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+    .project-links {
+        flex-wrap: wrap;
+    }
+    .contact h2,
+    .skills h2,
+    .projects h2 {
+        font-size: 30px;
+    }
+    footer {
+        font-size: 14px;
+    }
 }

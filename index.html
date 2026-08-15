@@ -8,17 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--HEADER-->
-    <header class="hero">
-        <h1>Hi I'm <span>Sobit Pratel</span></h1>
-        <h>Aspiring Full Stack Software Engineering</h>
-          <p>
-        I enjoy building websites, solving programming problems,
-        and learning modern web technologies.
-    </p>
-<a href="#projects" class="btn">View My Projects</a>
-    </header>
-    <!--Navigation-->
+      <!--Navigation-->
     <nav>
         <div class="logo">
             Sobit Pratel
@@ -30,26 +20,49 @@
         <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    <!--HEADER-->
+<header class="hero">
+    <div class="header-content">
+        <p class="hero-intro">Hello, I'm</p>
+        <h1>Sobit <span>Pratel</span></h1>
+        <h2>Aspiring Software Engineer</h2>
+        <p class="hero-description">
+            B.Sc. CSIT student passionate about software development,
+            web technologies, and building real-world projects.
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View My Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+    </div>
+</header>
     <!--About-->
     <section id="about" class="about">
        <div class="about-image">
-<img src="images/profile.png" alt="Sobit Pratel">
+<img src="images/profile.png" alt="Portrait of Sobit Pratel">
        </div>
        <div class="about-content">
-<h2>About Me</h2>
+        <P class="section-label">ABOUT ME</P>
+<h2>Building My Journey in Software Development</h2>
 <p> Hello! I'm Sobit Pratel, a B.Sc. CSIT student
      passionate about software development and technology.</p>
       <p>
-            I'm currently learning web development, Git, GitHub,
-            and modern programming technologies while building
-            real-world projects.
+          I'm currently strengthening my foundation in programming,
+            web development, Git, and GitHub while building practical
+            projects to turn what I learn into real-world experience.
         </p>
-       </div>
+        <p> My goal is to become a skilled software engineer by
+            continuously learning, solving problems, and building
+            useful software.</p>
        <a href="#" class="btn">Download Resume</a>
+       </div>
     </section>
     <!--Skills-->
     <section id="skills" class="skills">
- <h2>My Skills</h2>
+        <p class="section-label">MY SKILLS</p>
+ <h2>Technologies I'm Learning</h2>
+ <p class="skills-into"> I'm continuously developing my skills by learning,
+        practicing, and building projects.</p>
 <div  class="skills-container">
 <div class="skill-card">
     <h3>HTML</h3>
@@ -57,7 +70,7 @@
 </div>
 <div class="skill-card">
     <h3>CSS</h3>
-    <p>Responsive and modern web design</p>
+    <p>Responsive layouts and modern web design</p>
 </div>
 <div class="skill-card">
     <h3>C++</h3>
@@ -79,50 +92,61 @@
     </section>
       <!-- P rojects -->
     <section id="projects" class="projects">
-        <h2> My Projects</h2>
+        <p class="section-label">MY WORK</p>
+        <h2> Projects I'm Building</h2>
+        <p class="projects-intro">A collection of projects I'm building while developing
+        my programming and software development skills.</p>
 <div class="projects-container">
+    <!--Portfolio-->
     <div class="project-card">
         <div class="project-content">
-        <h3>Portfolio Website</h3>
+        <h3>Personal Portfolio</h3>
           <p>
                     A responsive personal portfolio website built
                     to showcase my skills, projects, and journey
                     as a software developer.
                 </p>
                 <p class="tech">
-                    HTMl . CSS . JavaScript
+                    HTMl • CSS • JavaScript
                 </p>
                 <div class="project-links">
-                    <a href="#" class="btn">Live demo</a>
-                    <a href="#" class="btn secondary">GitHub</a>
+                    <a href=" https://sobitpratel18.github.io/portfolio-website/" class="btn"
+                    target="_blank" rel="noopener noreferrer">Live demo</a>
+                    <a href="https://github.com/sobitpratel18/portfolio-website" class="btn secondary"
+                    target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div>
                 </div>
     </div>
+    <!--Weather App-->
     <div class="project-card">
         <div class="project-content">
             <h3>Weather App</h3>
-            <p> A weather application that displays current
-                weather information using a weather API.</p>
+            <p> A weather application designed to display
+                    weather information using a public API.</p>
                 <p class="tech">
-                    HTML . CSS . JavaScript . API
-                </p>
-                <div class="project-links" class="btn secondary">
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
-        </div>
-    </div>
-    <div class="project-card">
-        <div class="project-content">
-            <h3>Expense Tracker</h3>
-            <p> An application for tracking income and expenses
-                and managing personal finances.</p>
-                <p class="tech">
-                    HTML . CSS . JavaScript
+                    HTML • CSS • JavaScript • API
                 </p>
                 <div class="project-links">
                     <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn secondary">GitHub</a>
+                    <a href="#" class="btn"
+                    target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+        </div>
+    </div>
+    <!--Expense Tracker-->
+    <div class="project-card">
+        <div class="project-content">
+            <h3>Expense Tracker</h3>
+            <p>A web application for recording income and
+                    expenses while practicing JavaScript and
+                    application logic.</p>
+                <p class="tech">
+                    HTML • CSS • JavaScript
+                </p>
+                <div class="project-links">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn secondary"
+                    target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
         </div>
     </div>
@@ -130,14 +154,16 @@
     </section>
  <!-- Contact -->
     <section id="contact" class="contact">
+        <p class="section-label">GET IN TOUCH</p>
         <h2>Let's Work Together</h2>
-        <p>
+        <p class="contact-intro">
         I'm always interested in learning, building projects,
-        and connecting with other developers.
+        and connecting with other developers. Feel free to reach out!
     </p>
     <div class="contact-links">
         <a href="mailto:sobitpratel128@gmail.com" class="btn">Email Me</a>
         <a href="https://github.com/sobitpratel18" target="_blank" 
+        rel="noopener noreferrer"
         class="btn secondary">GitHub</a>
     </div>
     </section>
