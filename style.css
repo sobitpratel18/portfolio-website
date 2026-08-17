@@ -43,7 +43,7 @@ color: #38bdf8;
 }
 /*Header*/
 header{
-    background-color: #1e3a8a;
+    background-color: #1e3e8a;
     color: white;
     text-align: center;
     padding: 41px;
@@ -65,7 +65,7 @@ footer{
 }
 /*Hero Section*/
 .hero{
-    background-color: #1e3a8a;
+    background-color: #1e3e8a;
     color: white;
     text-align: center;
     padding: 120px 20px;
@@ -83,7 +83,7 @@ footer{
     margin-bottom: 10px;
 }
 .hero span{
-    color: #38bdf8;
+    color: #3dbdfd;
 }
 .hero h2{
     font-size: 30px;
@@ -102,7 +102,7 @@ footer{
 }
 .btn{
     display: inline-block;
-    background: #38bdf8;
+    background: #3dbdf8;
     color: white;
     text-decoration: none;
     padding: 15px 35px;
@@ -110,7 +110,7 @@ footer{
     transition: 0.3px;
 }
 .btn:hover{
-    color: #1e3a8a;
+    color: #1e3e8a;
 }
 /*About Section*/
 .about{
@@ -167,7 +167,7 @@ border-radius: 50%;
     gap: 20px;
 }
 .skill-card{
-    background: #f4f4f4;
+    background: whitesmoke;
     padding: 30px 20px;
     border-radius: 10px;
     transition: 0.3s;
@@ -196,7 +196,7 @@ margin: 0 auto 50px;
     gap: 25px;
 }
 .project-card{
-    background: #f4f4f4;
+    background: whitesmoke;
     padding: 30px;
     border-radius: 10px;
     transition: 0.3s;
