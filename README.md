@@ -14,7 +14,6 @@ real-world software projects.
 ## Technologies Used
 -HTML5
 -CSS3
--JavaScript
 -Git
 -GitHub
 
