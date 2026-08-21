@@ -23,7 +23,7 @@ real-world software projects.
 -Skills section
 -Projects section
 -Contact section
--Mobile-friendlu layout
+-Mobile-friendly layout
 
 ## Project Structure
 
