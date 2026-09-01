@@ -1,40 +1,29 @@
-# Sobit Pratel - Personal Portfolio
+# Personal Portfolio 🌐
 
-Welcome to my Personal Portfolio Website.
-
-## Live Demo
-[View Live Portfolio Website](https://sobitpratel18.github.io/portfolio-website/)
-
-## About 
-
-I am a B.Sc. CSIT student and aspiring software engineer
-interested in web development, programming, and building
-real-world software projects.
+My personal portfolio website showcasing my skills, projects,
+education and software engineering journey.
 
 ## Technologies Used
--HTML5
--CSS3
--Git
--GitHub
 
-## features
--Responsive design
--About section
--Skills section
--Projects section
--Contact section
--Mobile-friendly layout
+- HTML5
+- CSS3
 
-## Project Structure
+## Features
 
-```text
- 
-```text
-portfolio-website/
-├── images/
-│   └── profile.jpg
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+- Responsive design
+- About section
+- Skills section
+- Projects section
+- Contact section
+- Resume download
+- Project live-demo links
 
+## Live Demo
+
+YOUR_PORTFOLIO_LINK
+
+## What I Learned
+
+I learned how to structure a personal portfolio website,
+create responsive layouts using CSS, and organize projects
+for professional presentation.
